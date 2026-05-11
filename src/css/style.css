@@ -1,0 +1,22 @@
+.icon {
+    font-size: small;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+    margin: 10px;
+    width: 183px;
+    height: 30px;
+}
+
+button {
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+}
