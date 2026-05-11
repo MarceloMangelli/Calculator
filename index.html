@@ -14,30 +14,31 @@
         <div class=" buttons">
             <div class="linha1">
                 <button class="c-button">C</button>
-                <button class="percent-button"><span class="material-symbols-outlined icon">percent</span></button>
-                <button class="close-button"><span class="material-symbols-outlined icon">close</span></button>
+                <button class="percent-button" onclick="chooseOperator('%')"><span class="material-symbols-outlined icon">percent</span></button>
+                <button class="close-button" onclick="chooseOperator('*')"><span class="material-symbols-outlined icon">close</span></button>
                 <button class="backspace-button"><span class="material-symbols-outlined icon">backspace</span></button>
             </div>
             <div class="linha2">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>÷</button>
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
+                <button onclick="chooseOperator('/')">÷</button>
             </div>
             <div class="linha3">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="add-button"><span class="material-symbols-outlined icon">add</span></button>
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+                <button class="add-button" onclick="chooseOperator('+')"><span class="material-symbols-outlined icon">add</span></button>
             </div>
             <div class="linha4">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="remove-button"><span class="material-symbols-outlined icon">remove</span></button>
+                <button onclick="appendNumber('1')">1</button>
+                <button onclick="appendNumber('2')">2</button>
+                <button onclick="appendNumber('3')">3</button>
+                <button class="remove-button" onclick="chooseOperator('-')"><span class="material-symbols-outlined icon">remove</span></button>
             </div>
         </div>
     </div>
     
+    <script src="src/js/script.js"></script>
 </body>
 </html>
