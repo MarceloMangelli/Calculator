@@ -21,5 +21,19 @@ function chooseOperator(op) {
 
     operator = op
     previous = current
+    updateDisplay()
     current = ''
+}
+
+function calculate() {
+    switch (operator) {
+        case '+':
+            current + previous
+            break
+        case '-':
+            current - previous
+            break
+        case '÷':
+            current / previous
+    }
 }
